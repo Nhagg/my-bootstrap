@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Boostrap</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/variable.css">
 </head>
@@ -14,7 +15,7 @@
     <nav id="sidebar">
         <div class="sidebar-header">
             <img class="admin-avatar rounded-circle" src="img/admin-avatar.jpg" alt="admin-avatar">
-            <div class="ml-3">
+            <div class="ml-3 admin-info">
                 Alice <br>
                 <i class="fa fa-circle text-green"></i> Online
             </div>
@@ -79,7 +80,8 @@
         </ul>
     </nav>
 <!--    Page Content-->
-    <div id="content">
+    <div id="content" class="gray-bg">
+<!--        Top Header-->
         <nav class="navbar navbar-light bg-light navbar-static-top">
             <div class="navbar-left">
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
@@ -94,10 +96,10 @@
                     <ul class="dropdown-menu dropdown-messages">
                         <li>
                             <div class="dropdown-messages-box">
-                                <a class="dropdown-item float-left" href="profile.html">
+                                <div class="message-avatar-box">
                                     <img alt="image" class="message-avatar rounded-circle" src="img/admin-avatar.jpg">
-                                </a>
-                                <div class="media-body">
+                                </div>
+                                <div class="message-content">
                                     <small class="float-right">46h ago</small>
                                     <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
                                     <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
@@ -105,6 +107,9 @@
                             </div>
                         </li>
                         <li class="dropdown-divider"></li>
+                        <li class="dropdown-messages-footer">
+                            <a href="">Read All Messages</a>
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -158,17 +163,152 @@
                 </li>
             </ul>
         </nav>
-
-        <h2>Collapsible Sidebar Using Bootstrap 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
-
-        <h2>Lorem Ipsum Dolor</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <div class="line"></div>
+<!--Main Content-->
+        <div class="wrapper-content">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Income
+                            <span class="badge badge-info float-right">Monthly</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="h1">40 886,200</div>
+                            <span class="text-muted small">Total Income</span>
+                            <span class="text-green float-right">98% <i class="fa fa-bolt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Order
+                            <span class="badge badge-info float-right">Daily</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="h1">42</div>
+                            <span class="text-muted small">Total Order</span>
+                            <span class="text-danger float-right">18% <i class="fa fa-bolt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Visits
+                            <span class="badge badge-dark float-right">Today</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="h1">40 886,200</div>
+                            <span class="text-muted small">Total Income</span>
+                            <span class="text-green float-right">98% <i class="fa fa-bolt"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-header">
+                            User Activities
+                            <span class="badge badge-danger float-right">This week</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="h1">40 886,200</div>
+                            <span class="text-muted small">Total Income</span>
+                            <span class="text-green float-right">98% <i class="fa fa-bolt"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-sm-12">
+                    <h2>Chart JS</h2>
+                </div>
+                <div class="col-sm-8">
+                    <canvas id="canvas"></canvas>
+                </div>
+            </div>
+            <div class="h1">Tables</div>
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Basic table
+                        </div>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Stripped table
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Value</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td><span class="text-danger"><i class="fa fa-level-down-alt"></i> -10%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td><span class="text-success"><i class="fa fa-level-up-alt"></i> 30%</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td><span class="text-warning"><i class="fa fa-level-up-alt"></i> 10%</span></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>
@@ -178,11 +318,73 @@
 <script src="js/font-awesome-5.0.13.min.js"></script>
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/bootstrap-4.1.0.min.js"></script>
+<script src="js/chart-2.9.3.min.js"></script>
+<script src="js/chartjs-uitls.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('#sidebarCollapse').on('click', function () {
             $('#sidebar').toggleClass('active');
         });
     });
+
+    // ChartJS data
+    var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var color = Chart.helpers.color;
+    var barChartData = {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'Dataset 1',
+            backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.red,
+            borderWidth: 1,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ]
+        }, {
+            label: 'Dataset 2',
+            backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+            borderColor: window.chartColors.blue,
+            borderWidth: 1,
+            data: [
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor(),
+                randomScalingFactor()
+            ]
+        }]
+
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById('canvas').getContext('2d');
+        window.myBar = new Chart(ctx, {
+            type: 'bar',
+            data: barChartData,
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Bar Chart'
+                }
+            }
+        });
+
+    };
+
+    function randomScalingFactor() {
+        return Math.round(Math.random() * 100);
+    };
 </script>
 </html>
