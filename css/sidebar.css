@@ -73,7 +73,8 @@
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    border-top: solid 1px #47748b;
+    padding: 0 0 20px;
     border-bottom: 1px solid #47748b;
 }
 
