@@ -1,4 +1,7 @@
-
+html {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
 .sidebar-header {
     display: flex;
 }
@@ -101,4 +104,61 @@ span {
 
 .wrapper-content {
     padding: 20px 15px 40px;
+}
+/*callout*/
+.callout {
+    border-radius: 3px;
+    margin: 0 0 20px 0;
+    padding: 15px 30px 15px 15px;
+    border-left: 5px solid #eee;
+}
+
+.callout.callout-info {
+    background-color: #00c0ef !important;
+    border-color: #0097bc;
+}
+
+.callout.callout-danger {
+    background-color: #dd4b39 !important;
+    border-color: #c23321;
+}
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.box-header.with-border {
+    border-bottom: 1px solid #f4f4f4;
+}
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+.box.box-default {
+    border-top-color: #d2d6de;
+}
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+}
+
+.box-footer {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: 1px solid #f4f4f4;
+    padding: 10px;
+    background-color: #fff;
 }
