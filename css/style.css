@@ -5,9 +5,9 @@ html {
 .sidebar-header {
     display: flex;
 }
-a,
-a:hover,
-a:focus {
+#sidebar a,
+#sidebar a:hover,
+#sidebar a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
@@ -161,4 +161,8 @@ span {
     border-top: 1px solid #f4f4f4;
     padding: 10px;
     background-color: #fff;
+}
+
+.progress {
+    margin-bottom: 15px;
 }
