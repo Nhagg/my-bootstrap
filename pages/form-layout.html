@@ -221,84 +221,147 @@
         </nav>
         <!--Main Content-->
         <div class="wrapper-content">
-            <h1> Typography </h1>
-            <div class="row mt-5">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h3>Type Scale</h3>
-                                <p>Pages type scale includes a range of contrasting styles that support the needs of your product and its content.</p>
-                                <p>The type scale is a combination of 8 styles that are supported by the type system. It contains reusable categories of text, each with an intended application and meaning.</p>
-                            </div>
-                            <div class="col-md-8">
-                                <small>Typography Scale - 1.125</small>
-                                <div class="h1 mt-4">
-                                    The quick brown fox jumps over the lazy dog
-                                </div>
-                                <div class="text-muted">
-                                    h1
-                                    <span class="float-right">
-                                    font-size: 2.5rem - line-height:1.2
-                                </span>
-                                </div>
-                                <hr>
-                                <div class="h2">
-                                    The quick brown fox jumps over the lazy dog
-                                </div>
-                                <div class="text-muted">
-                                    h2
-                                    <span class="float-right">
-                                    font-size: 2rem - line-height:1.2
-                                </span>
-                                </div>
-                                <hr>
-                                <div class="h3">
-                                    TForsaking monastic tradition, twelve jovial friars gave up their vocation for a questionable existence on the flying trapeze. Bawds jog, flick quartz, vex nymph.
-                                </div>
-                                <div class="text-muted">
-                                    h3
-                                    <span class="float-right">
-                                    font-size: 1.75rem - line-height:1.2
-                                </span>
-                                </div>
-                                <hr>
-                                <div class="h4">
-                                    TForsaking monastic tradition, twelve jovial friars gave up their vocation for a questionable existence on the flying trapeze. Bawds jog, flick quartz, vex nymph.
-                                </div>
-                                <div class="text-muted">
-                                    h4
-                                    <span>
-                                    font-size: 1.5rem - line-height:1.2
-                                </span>
-                                </div>
-                                <hr>
-                                <div class="h5">
-                                    TForsaking monastic tradition, twelve jovial friars gave up their vocation for a questionable existence on the flying trapeze. Bawds jog, flick quartz, vex nymph.
-                                </div>
-                                <div class="text-muted">
-                                    h5
-                                    <span class="float-right">
-                                    font-size: 1.25rem - line-height:1.2
-                                </span>
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        Text transform
+            <h1> Form Laoyout </h1>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card mt-4">
+                        <div class="card-header">Validation Form</div>
+                        <div class="card-body">
+                            <form class="was-validated">
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer01">First name</label>
+                                        <input type="text" class="form-control is-valid" id="validationServer01" value="Alice" required="">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
-                                    <div class="col-sm-8">
-                                        <p class="text-lowercase">Lowercased text.</p>
-                                        <p class="text-uppercase"> UPPERCASED TEXT. </p>
-                                        <p class="text-capitalize">CapiTaliZed text.</p>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer02">Last name</label>
+                                        <input type="text" class="form-control is-valid" id="validationServer02" value="Elizabeth" required="">
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServerUsername">Username</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                            </div>
+                                            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required="">
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer04">State</label>
+                                        <select class="custom-select is-invalid" id="validationServer04" required="">
+                                            <option selected="" disabled="" value="">Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a valid state.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="customControlValidation2">Gender</label>
+                                    <div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation2">Male</label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlValidation3">Female</label>
+                                            <div class="ml-3 invalid-feedback">Please select a gender</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer03">City</label>
+                                        <input type="text" class="form-control is-invalid" id="validationServer03" required="">
+                                        <div class="invalid-feedback">
+                                            Please provide a valid city.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationServer05">Zip</label>
+                                        <input type="text" class="form-control is-invalid" id="validationServer05" required="">
+                                        <div class="invalid-feedback">
+                                            Please provide a valid zip.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validationTextarea">Description</label>
+                                    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Please enter a message in the textarea.
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                        <label class="custom-control-label" for="customControlValidation1">Agree to terms and conditions</label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card mt-4">
+                        <div class="card-header">Register Form</div>
+                        <div class="card-body">
+                            <form class="">
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="userName">User name</label>
+                                        <input type="text" class="form-control" id="userName" value="alice1992" required="">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="pass1">Password</label>
+                                        <input type="password" class="form-control" id="pass1" value="pass_word2" required="">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="pass2">Confirm Password</label>
+                                        <input type="password" class="form-control " id="pass2" value="pass_word2" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="validationTextarea">Get Notification Email: </label>
+                                    <div class="custom-control custom-switch d-inline ml-3">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                        <label class="custom-control-label" for="customSwitch1"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input type="checkbox" class="custom-control-input" id="confirm" required>
+                                        <label class="custom-control-label" for="confirm">Agree to terms and conditions</label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+                            <button class="btn btn-primary" type="submit">Submit form</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-5"></div>
         </div>
     </div>
 </div>
