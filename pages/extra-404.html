@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="../css/variable.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/font-awesome/4.7/font-awesome.css">
+    <link rel="stylesheet" href="../css/font-awesome/5.12.1/all.css">
+    <style>
+        .error-page {
+            background: #fff;
+            padding: 50px 0px;
+        }
+        .error-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .headline {
+            font-size: 60px;
+            font-weight: normal;
+            margin-right: 30px;
+        }
+    </style>
 </head>
 <body>
 <div class="wrapper">
@@ -221,50 +239,42 @@
         </nav>
         <!--Main Content-->
         <div class="wrapper-content">
-            <h1> Goggle Maps </h1>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="mapouter">
-                        <iframe
-                                class="mapouter"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14896.387094976819!2d105.8457196240538!3d21.028813504362187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc000809ea7%3A0xbb2716ec0282371d!2zxJDhu4FuIE5n4buNYyBTxqFu!5e0!3m2!1svi!2s!4v1585536770712!5m2!1svi!2s"
-                                frameborder="0"
-                                style="width: 100%; height: 500px "
-                                allowfullscreen="true"
-                                aria-hidden="false"
-                                tabindex="0"
-                        >
-                        </iframe>
-                    </div>
-                </div>
-                <div class="col-12 mt-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>HTML Code</h3>
-                            <hr>
-                            <textarea disabled style="width: 100%; height: 300px">
-<iframe
-        class="mapouter"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14896.387094976819!2d105.8457196240538!3d21.028813504362187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc000809ea7%3A0xbb2716ec0282371d!2zxJDhu4FuIE5n4buNYyBTxqFu!5e0!3m2!1svi!2s!4v1585536770712!5m2!1svi!2s"
-        frameborder="0"
-        style="width: 100%; height: 500px "
-        allowfullscreen="true"
-        aria-hidden="false"
-        tabindex="0"
->
-</iframe>
-                            </textarea>
+            <h1> 404 page </h1>
+            <hr>
+            <section class="content mt-5">
+                <div class="container-fluid error-page">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2 error-box">
+                                <h2 class="headline text-warning"> 404 </h2>
+                                <div class="error-content">
+                                    <h3>
+                                        <i class="fa fa-warning text-yellow"></i> Oops! Page not found.
+                                    </h3>
+                                    <p>
+                                        We could not find the page you were looking for.
+                                        Meanwhile, you may <a href="../index.html">return to Home</a> or try using the search form.
+                                    </p>
+                                    <form class="search-form">
+                                        <div class="input-group">
+                                            <input type="text" name="search" class="form-control" placeholder="Search">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text bg-warning"><i class="fa fa-search"></i></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </div>
 </body>
 <script src="../js/jquery/3.3.1/jquery.slim.min.js"></script>
 <script src="../js/bootstrap/4.4.1/bootstrap.min.js"></script>
-<script src="../js/font-awesome/5.12.1/all.min.js"></script>
 <script src="../js/app.js"></script>
 
 <script type="text/javascript">
